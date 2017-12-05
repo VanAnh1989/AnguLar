@@ -1,0 +1,5 @@
+<h1>Well come Http</h1>
+<div *ngIf="result != null">
+    <p *ngFor="let account of result">{{account.userName}},{{account.passWord1}},{{account.passWord2}}</p>
+</div>
+<button (click)="loadData()">Load</button>

@@ -1,0 +1,9 @@
+<h2>Well Come</h2>
+<h3 *ngFor="let car of cars">
+    {{car.name}}:{{car.color}}:{{car.des}}
+</h3>
+<div>
+    Input Price : <input placeholder="done" (input)="setPrice($event.target.value)"/>
+    <button (click)="calculaterTax()">Calculate tax</button>
+</div>
+<h3>this price : {{tax}} - vnd</h3>
