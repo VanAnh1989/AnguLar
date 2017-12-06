@@ -1,0 +1,10 @@
+<h1>Select Element</h1>
+<mat-form-field>
+    <mat-select placeholder="choose dog name" [(value)]="selected" multiple>
+        <mat-option>--none--</mat-option>
+        <mat-optgroup *ngFor="let option of dogs" [label]="option.name">
+            <mat-option *ngFor="let dog of option.value" [value]="dog" >{{dog}}</mat-option>
+        </mat-optgroup>
+    </mat-select>
+</mat-form-field>
+<div>Seleted is : {{selected}}</div>

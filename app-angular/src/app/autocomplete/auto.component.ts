@@ -20,4 +20,8 @@ export class AutoComponent implements OnInit{
     filter(val : string) : string[]{
         return this.options.filter(option => option.toLowerCase().indexOf(val.toLowerCase())===0);
     };
+    getName() : boolean {
+        alert('done');
+        return false;
+    }
 }

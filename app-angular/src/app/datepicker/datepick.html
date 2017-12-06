@@ -1,0 +1,20 @@
+<h1>Date Picker</h1>
+<p>
+<mat-form-field>
+    <input matInput [matDatepicker]="picker" placeholder="choose a date" disabled/>
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker disabled="false"></mat-datepicker>
+</mat-form-field>
+</p>
+<h1>Date Validation 1/1/2017 -1/1/2018</h1>
+<mat-form-field>
+    <input matInput [matDatepicker]="picker1" placeholder="choose a date"  [min]="minDate" [max]="maxDate" />
+    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+    <mat-datepicker #picker1 touchUi="true"></mat-datepicker>
+</mat-form-field>
+<h1>Manually open calendar</h1>
+<mat-form-field>
+    <input matInput [matDatepicker]="picker2" placeholder="choose a date"  [min]="minDate" [max]="maxDate" />
+    <mat-datepicker #picker2></mat-datepicker>
+</mat-form-field>
+<button mat-raised-button (click)="picker2.open()">Open</button>

@@ -1,0 +1,15 @@
+<h1>Menu choose</h1>
+<mat-menu #menu="matMenu" yPosition="below">
+    <button mat-menu-item [matMenuTriggerFor]="menu1" >Item 1</button>
+</mat-menu>
+<mat-menu #menu1="matMenu" yPosition="below" >
+    <button mat-menu-item [matMenuTriggerFor]="menu2">Item 2</button>
+</mat-menu>
+<mat-menu #menu2="matMenu" yPosition="below" >
+    <button mat-menu-item>Item 3</button>
+    <button mat-menu-item>Item 4</button>
+    <button mat-menu-item>Item 5</button>
+</mat-menu>
+<button mat-button [matMenuTriggerFor]="menu"> 
+    <mat-icon>more_vert</mat-icon>
+</button>
