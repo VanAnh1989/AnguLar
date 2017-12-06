@@ -1,0 +1,18 @@
+<mat-list>
+    <mat-list-item *ngFor="let message of typesOfShoes">
+        <h3 matLine> {{message}} </h3>
+        <p matLine>
+            <span> {{message}} </span>
+            <span class="demo-2"> -- {{message}} </span>
+        </p>
+    </mat-list-item>
+</mat-list>
+
+<!-- three line list -->
+<mat-list>
+    <mat-list-item *ngFor="let message of typesOfShoes">
+        <h3> {{message}} </h3>
+        <p> {{message}} </p>
+        <p class="demo-2"> {{message}} </p>
+    </mat-list-item>
+</mat-list>

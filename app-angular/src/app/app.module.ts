@@ -7,6 +7,12 @@ import { DatepickModule } from './datepicker/datepick.module';
 import { FormfieldModule } from './formfield/formfield.module';
 import { SelectModule } from './select/select.module';
 import { MenuModule } from './menu/menu.module';
+import { SlideModule } from './slidenav/slide.module';
+import { ListlayoutModule } from './listlayout/listlayout.module';
+import { GridModule }  from './gridlayout/grid.module';
+import { CardModule } from './cardlayout/card.module';
+import { TabModule} from './tablayout/tab.module';
+import { IconModule} from './icon/icon.module';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -14,7 +20,7 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
     AppComponent
   ],
   imports: [
-    MenuModule,
+    IconModule,
   ],
   providers: [
     CarService,
