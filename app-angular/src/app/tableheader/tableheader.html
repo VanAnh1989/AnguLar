@@ -1,0 +1,15 @@
+<h1>Table Header Sort by user</h1>
+<table>
+    <tr matSort (matSortChange)="sortData($event)">
+        <th mat-sort-header="name">name</th>
+        <th mat-sort-header="age">age</th>
+        <th mat-sort-header="address">address</th>
+        <th mat-sort-header="phone">phone</th>
+    </tr>
+    <tr *ngFor="let person of persons">
+        <td>{{person.nam}}</td>
+        <td>{{person.age}}</td>
+        <td>{{person.add}}</td>
+        <td>{{person.pho}}</td>
+    </tr>
+</table>

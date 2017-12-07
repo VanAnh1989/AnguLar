@@ -13,6 +13,10 @@ import { GridModule }  from './gridlayout/grid.module';
 import { CardModule } from './cardlayout/card.module';
 import { TabModule} from './tablayout/tab.module';
 import { IconModule} from './icon/icon.module';
+import { DialogModule } from './dialog/dialog.module';
+import { TooltipModule } from './tooltip/tooltip.module';
+import { TableModule } from './table/table.module';
+import { TableheaderModule } from './tableheader/tableheader.module';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -20,7 +24,7 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
     AppComponent
   ],
   imports: [
-    IconModule,
+    TableheaderModule,
   ],
   providers: [
     CarService,
